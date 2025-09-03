@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaldal - Handwash Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .sidebar-transition {
+      transition: transform 0.3s ease-in-out;
+    }
+    .dropdown-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+    }
+    .dropdown-menu.open {
+      max-height: 500px;
+    }
+    .cart-badge {
+      animation: bounce 0.5s ease-in-out;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-orange-400 shadow-md">
+    <div class="flex items-center justify-between px-4 py-3">
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden text-white">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+      
+      <!-- Desktop Menu Button -->
+      <button id="desktopMenuBtn" class="hidden md:block text-white hover:bg-orange-500 p-2 rounded">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+      
+      <!-- Logo -->
+      <div class="flex-1 text-center md:text-left md:flex-none md:ml-4">
+        <img src="https://i.chaldn.com/asset/egg-chaldal-web-release-id-27065/https/Default/components/header/Header/images/logo-small.png?q=low&webp=1&alpha=1" 
+             alt="Chaldal" class="h-8 mx-auto md:mx-0">
+      </div>
+      
+      <!-- Search Bar (Desktop) -->
+      <div class="hidden md:flex flex-1 max-w-2xl mx-4">
+        <div class="relative w-full">
+          <input type="text" placeholder="Search for products (e.g. eggs, milk, potato)" 
+                 class="w-full px-4 py-2 rounded-l-md border-0 focus:outline-none">
+          <button class="absolute right-0 top-0 h-full px-4 bg-white rounded-r-md hover:bg-gray-100">
+            <i class="fas fa-search text-gray-600"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Location & Login -->
+      <div class="hidden md:flex items-center space-x-4">
+        <div class="text-white">
+          <i class="fas fa-map-marker-alt text-red-500"></i>
+          <span class="ml-1 font-semibold">Dhaka</span>
+        </div>
+        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+          Login
+        </button>
+      </div>
+      
+      <!-- Cart -->
+      <div class="relative">
+        <button id="cartBtn" class="text-white p-2">
+          <i class="fas fa-shopping-cart text-xl"></i>
+          <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Search -->
+    <div class="md:hidden px-4 pb-3">
+      <div class="relative">
+        <input type="text" placeholder="Search for products" 
+               class="w-full px-4 py-2 rounded-lg border-0 focus:outline-none">
+        <button class="absolute right-2 top-2">
+          <i class="fas fa-search text-gray-600"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar Overlay -->
+  <div id="sidebarOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+  
+  <!-- Sidebar -->
+  <aside id="sidebar" class="fixed left-0 top-0 h-full w-80 bg-white shadow-lg z-50 transform -translate-x-full sidebar-transition">
+    <div class="p-4 border-b">
+      <div class="flex justify-between items-center">
+        <h2 class="text-lg font-semibold">Categories</h2>
+        <button id="closeSidebar" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="overflow-y-auto h-full pb-20">
+      <!-- Category Buttons -->
+      <div class="p-4 border-b">
+        <div class="grid grid-cols-3 gap-2">
+          <button class="bg-red-500 text-white p-3 rounded text-sm font-semibold">
+            <i class="fas fa-shopping-basket block mb-1"></i>
+            Grocery
+          </button>
+          <button class="border border-red-500 text-red-500 p-3 rounded text-sm font-semibold">
+            <i class="fas fa-pills block mb-1"></i>
+            Pharmacy
+          </button>
+          <button class="border border-red-500 text-red-500 p-3 rounded text-sm font-semibold">
+            <i class="fas fa-utensils block mb-1"></i>
+            Cookups
+          </button>
+        </div>
+      </div>
+      
+      <!-- Menu Items -->
+      <nav class="p-4">
+        <ul class="space-y-2">
+          <li>
+            <a href="#" class="flex items-center justify-between p-2 hover:bg-gray-100 rounded">
+              <span class="flex items-center">
+                <i class="fas fa-tag text-red-500 mr-3"></i>
+                Offers
+              </span>
+              <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">53</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#" class="flex items-center p-2 hover:bg-gray-100 rounded">
+              <i class="fas fa-heart text-red-500 mr-3"></i>
+              Favourites
+            </a>
+          </li>
+          
+          <li>
+            <button class="dropdown-toggle w-full flex items-center justify-between p-2 hover:bg-gray-100 rounded" data-target="personalCareDropdown">
+              <span class="flex items-center">
+                <i class="fas fa-user text-gray-600 mr-3"></i>
+                Personal Care
+              </span>
+              <i class="fas fa-chevron-right dropdown-arrow transition-transform"></i>
+            </button>
+            <ul id="personalCareDropdown" class="dropdown-menu ml-6 mt-1 space-y-1">
+              <li><a href="#" class="block p-2 hover:bg-gray-100 rounded">Women's Care</a></li>
+              <li><a href="#" class="block p-2 hover:bg-gray-100 rounded">Men's Care</a></li>
+              <li>
+                <button class="dropdown-toggle w-full flex items-center justify-between p-2 hover:bg-gray-100 rounded text-yellow-600 font-semibold" data-target="handwashDropdown">
+                  <span>Handwash</span>
+                  <i class="fas fa-chevron-down dropdown-arrow transition-transform"></i>
+                </button>
+                <ul id="handwashDropdown" class="dropdown-menu ml-4 mt-1 space-y-1">
+                  <li><a href="#" class="block p-2 hover:bg-gray-100 rounded">Liquid Handwash</a></li>
+                  <li><a href="#" class="block p-2 hover:bg-gray-100 rounded">Hand Sanitizer</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Cart Sidebar -->
+  <aside id="cartSidebar" class="fixed right-0 top-0 h-full w-80 bg-white shadow-lg z-50 transform translate-x-full sidebar-transition">
+    <div class="p-4 border-b flex justify-between items-center">
+      <div class="flex items-center">
+        <i class="fas fa-shopping-bag text-gray-600 mr-2"></i>
+        <span id="cartItemCount" class="font-semibold">1 ITEM</span>
+      </div>
+      <button id="closeCart" class="text-gray-500 hover:text-gray-700 bg-gray-200 px-3 py-1 rounded text-sm">
+        Close
+      </button>
+    </div>
+
+    <!-- Delivery Info -->
+    <div class="bg-green-400 text-white p-3 flex items-center justify-between">
+      <span class="text-sm font-medium">You have reduced delivery charge</span>
+      <div class="flex items-center">
+        <span class="font-bold">৳ 49</span>
+        <i class="fas fa-info-circle ml-2"></i>
+      </div>
+    </div>
+
+    <!-- Express Delivery -->
+    <div class="p-3 border-b flex items-center">
+      <i class="fas fa-horse text-gray-600 mr-2"></i>
+      <span class="font-medium text-gray-700">Express Delivery</span>
+    </div>
+    
+    <div id="cartItems" class="flex-1 overflow-y-auto">
+      <div id="emptyCart" class="text-center py-8 hidden">
+        <i class="fas fa-shopping-cart text-gray-300 text-4xl mb-4"></i>
+        <p class="text-gray-500">Your cart is empty</p>
+      </div>
+    </div>
+
+    <!-- Special Code Section -->
+    <div class="p-4 border-t border-b">
+      <div class="flex items-center justify-center text-gray-600">
+        <i class="fas fa-chevron-up mr-2"></i>
+        <span>Have a special code?</span>
+      </div>
+    </div>
+    
+    <div id="cartFooter" class="p-4">
+      <button id="placeOrderBtn" class="w-full bg-red-500 text-white py-4 rounded-lg hover:bg-red-600 flex items-center justify-between text-lg font-semibold">
+        <span>Place Order</span>
+        <span id="cartTotal">৳ 0</span>
+      </button>
+      
+      <!-- Payment Methods -->
+      <div class="flex justify-center mt-3 space-x-2">
+        <i class="fab fa-cc-mastercard text-2xl text-gray-400"></i>
+        <i class="fab fa-cc-visa text-2xl text-gray-400"></i>
+        <i class="fas fa-mobile-alt text-2xl text-gray-400"></i>
+        <i class="fas fa-money-bill-wave text-2xl text-gray-400"></i>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Floating Bag Button -->
+  <div id="floatingBag" class="fixed bottom-20 right-4 z-40 hidden md:bottom-4">
+    <div class="relative">
+      <button id="floatingBagBtn" class="bg-gray-600 text-white shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow flex flex-col items-center min-w-[80px]">
+        <i class="fas fa-shopping-bag text-yellow-400 text-2xl mb-1"></i>
+        <span id="floatingBagCount" class="text-yellow-400 font-bold text-sm">1 ITEM</span>
+      </button>
+      <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded px-2 py-1 text-xs font-bold">
+        ৳ <span id="floatingBagTotal">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="pt-24 md:pt-20">
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b">
+      <div class="container mx-auto px-4 py-3">
+        <nav class="text-sm">
+          <a href="#" class="text-gray-600 hover:text-gray-800">Personal Care</a>
+          <span class="mx-2 text-gray-400">/</span>
+          <span class="font-semibold text-gray-800">Handwash</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="container mx-auto px-4 py-8">
+      <h1 class="text-2xl font-bold mb-6">Handwash Products</h1>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="aspect-square bg-gray-100 flex items-center justify-center p-4">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/1/1-1.1563456503.jpg" 
+                 alt="Savlon Liquid Handwash" class="max-w-full max-h-full object-contain">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-2">Savlon Liquid Handwash 200ml</h3>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-lg font-bold text-red-600">৳85</span>
+              <span class="text-sm text-gray-500 line-through">৳95</span>
+            </div>
+            <div class="product-controls" data-id="1">
+              <button class="add-to-cart w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition-colors" 
+                      data-id="1" data-name="Savlon Liquid Handwash 200ml" data-price="85" data-image="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/1/1-1.1563456503.jpg">
+                <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+              </button>
+              <div class="quantity-controls hidden flex items-center justify-between mt-2">
+                <button class="decrease-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="1">
+                  <i class="fas fa-minus text-xs"></i>
+                </button>
+                <span class="quantity-display font-semibold">0</span>
+                <button class="increase-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="1">
+                  <i class="fas fa-plus text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="aspect-square bg-gray-100 flex items-center justify-center p-4">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/2/2-1.1563456503.jpg" 
+                 alt="Dettol Hand Sanitizer" class="max-w-full max-h-full object-contain">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-2">Dettol Hand Sanitizer 50ml</h3>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-lg font-bold text-red-600">৳65</span>
+              <span class="text-sm text-gray-500 line-through">৳75</span>
+            </div>
+            <div class="product-controls" data-id="2">
+              <button class="add-to-cart w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition-colors" 
+                      data-id="2" data-name="Dettol Hand Sanitizer 50ml" data-price="65" data-image="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/2/2-1.1563456503.jpg">
+                <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+              </button>
+              <div class="quantity-controls hidden flex items-center justify-between mt-2">
+                <button class="decrease-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="2">
+                  <i class="fas fa-minus text-xs"></i>
+                </button>
+                <span class="quantity-display font-semibold">0</span>
+                <button class="increase-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="2">
+                  <i class="fas fa-plus text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="aspect-square bg-gray-100 flex items-center justify-center p-4">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/3/3-1.1563456503.jpg" 
+                 alt="Lifebuoy Handwash" class="max-w-full max-h-full object-contain">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-2">Lifebuoy Total Handwash 250ml</h3>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-lg font-bold text-red-600">৳95</span>
+              <span class="text-sm text-gray-500 line-through">৳110</span>
+            </div>
+            <div class="product-controls" data-id="3">
+              <button class="add-to-cart w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition-colors" 
+                      data-id="3" data-name="Lifebuoy Total Handwash 250ml" data-price="95" data-image="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/3/3-1.1563456503.jpg">
+                <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+              </button>
+              <div class="quantity-controls hidden flex items-center justify-between mt-2">
+                <button class="decrease-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="3">
+                  <i class="fas fa-minus text-xs"></i>
+                </button>
+                <span class="quantity-display font-semibold">0</span>
+                <button class="increase-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="3">
+                  <i class="fas fa-plus text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="aspect-square bg-gray-100 flex items-center justify-center p-4">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/4/4-1.1563456503.jpg" 
+                 alt="Protex Handwash" class="max-w-full max-h-full object-contain">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-2">Protex Deep Clean Handwash 300ml</h3>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-lg font-bold text-red-600">৳120</span>
+              <span class="text-sm text-gray-500 line-through">৳135</span>
+            </div>
+            <div class="product-controls" data-id="4">
+              <button class="add-to-cart w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition-colors" 
+                      data-id="4" data-name="Protex Deep Clean Handwash 300ml" data-price="120" data-image="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/4/4-1.1563456503.jpg">
+                <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+              </button>
+              <div class="quantity-controls hidden flex items-center justify-between mt-2">
+                <button class="decrease-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="4">
+                  <i class="fas fa-minus text-xs"></i>
+                </button>
+                <span class="quantity-display font-semibold">0</span>
+                <button class="increase-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="4">
+                  <i class="fas fa-plus text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="aspect-square bg-gray-100 flex items-center justify-center p-4">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/5/5-1.1563456503.jpg" 
+                 alt="Palmolive Handwash" class="max-w-full max-h-full object-contain">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-2">Palmolive Antibacterial Handwash 250ml</h3>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-lg font-bold text-red-600">৳105</span>
+              <span class="text-sm text-gray-500 line-through">৳120</span>
+            </div>
+            <div class="product-controls" data-id="5">
+              <button class="add-to-cart w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition-colors" 
+                      data-id="5" data-name="Palmolive Antibacterial Handwash 250ml" data-price="105" data-image="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/5/5-1.1563456503.jpg">
+                <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+              </button>
+              <div class="quantity-controls hidden flex items-center justify-between mt-2">
+                <button class="decrease-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="5">
+                  <i class="fas fa-minus text-xs"></i>
+                </button>
+                <span class="quantity-display font-semibold">0</span>
+                <button class="increase-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="5">
+                  <i class="fas fa-plus text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="aspect-square bg-gray-100 flex items-center justify-center p-4">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/6/6-1.1563456503.jpg" 
+                 alt="Sterillium Hand Sanitizer" class="max-w-full max-h-full object-contain">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-2">Sterillium Hand Sanitizer 100ml</h3>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-lg font-bold text-red-600">৳150</span>
+              <span class="text-sm text-gray-500 line-through">৳170</span>
+            </div>
+            <div class="product-controls" data-id="6">
+              <button class="add-to-cart w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition-colors" 
+                      data-id="6" data-name="Sterillium Hand Sanitizer 100ml" data-price="150" data-image="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/6/6-1.1563456503.jpg">
+                <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+              </button>
+              <div class="quantity-controls hidden flex items-center justify-between mt-2">
+                <button class="decrease-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="6">
+                  <i class="fas fa-minus text-xs"></i>
+                </button>
+                <span class="quantity-display font-semibold">0</span>
+                <button class="increase-btn w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600" data-id="6">
+                  <i class="fas fa-plus text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="fixed bottom-0 left-0 right-0 bg-red-500 md:hidden z-40">
+    <button class="w-full text-white py-4 text-lg font-semibold">
+      Start Shopping
+    </button>
+  </div>
+
+  <!-- Order Confirmation Modal -->
+  <div id="orderModal" class="fixed inset-0 bg-black bg-opacity-50 z-60 hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg p-6 max-w-md mx-4">
+      <div class="text-center">
+        <i class="fas fa-check-circle text-green-500 text-4xl mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Order Placed Successfully!</h3>
+        <p class="text-gray-600 mb-4">Your order has been confirmed and will be delivered soon.</p>
+        <div class="bg-gray-100 p-3 rounded mb-4">
+          <p class="text-sm text-gray-600">Order Total: <span id="modalOrderTotal" class="font-bold">৳ 0</span></p>
+          <p class="text-sm text-gray-600">Delivery Charge: <span class="font-bold">৳ 49</span></p>
+        </div>
+        <button id="closeOrderModal" class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600">
+          Continue Shopping
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
