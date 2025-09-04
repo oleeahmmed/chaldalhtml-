@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaldal - Order Confirmed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-orange-400 shadow-md">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html">
+          <img src="https://i.chaldn.com/asset/egg-chaldal-web-release-id-27065/https/Default/components/header/Header/images/logo-small.png?q=low&webp=1&alpha=1" 
+               alt="Chaldal" class="h-8">
+        </a>
+        <div class="text-white font-semibold">Order Confirmation</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Order Confirmation Content -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Success Message -->
+    <div class="text-center mb-8">
+      <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-check text-green-500 text-3xl"></i>
+      </div>
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">Order Confirmed!</h1>
+      <p class="text-lg text-gray-600">Thank you for your order. We'll deliver it soon!</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Order Details -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-6">Order Details</h2>
+        
+        <!-- Order Info -->
+        <div class="border-b pb-4 mb-4">
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <span class="text-gray-600">Order Number:</span>
+              <p class="font-semibold">#CHD-12345</p>
+            </div>
+            <div>
+              <span class="text-gray-600">Order Date:</span>
+              <p class="font-semibold">Dec 16, 2024</p>
+            </div>
+            <div>
+              <span class="text-gray-600">Estimated Delivery:</span>
+              <p class="font-semibold">Dec 16, 2024 (3-6 PM)</p>
+            </div>
+            <div>
+              <span class="text-gray-600">Payment Method:</span>
+              <p class="font-semibold">Cash on Delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Items -->
+        <div class="space-y-4 mb-6">
+          <h3 class="font-semibold">Items Ordered</h3>
+          
+          <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/1/1-1.1563456503.jpg" 
+                 alt="Product" class="w-16 h-16 object-contain rounded">
+            <div class="flex-1">
+              <h4 class="font-medium">Fresh Tomatoes 1kg</h4>
+              <p class="text-sm text-gray-500">Quantity: 2</p>
+              <p class="text-sm text-gray-500">Unit Price: ৳45</p>
+            </div>
+            <span class="font-bold">৳90</span>
+          </div>
+          
+          <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/2/2-1.1563456503.jpg" 
+                 alt="Product" class="w-16 h-16 object-contain rounded">
+            <div class="flex-1">
+              <h4 class="font-medium">Fresh Milk 1L</h4>
+              <p class="text-sm text-gray-500">Quantity: 1</p>
+              <p class="text-sm text-gray-500">Unit Price: ৳65</p>
+            </div>
+            <span class="font-bold">৳65</span>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="border-t pt-4 space-y-2">
+          <div class="flex justify-between text-sm">
+            <span>Subtotal</span>
+            <span>৳155</span>
+          </div>
+          <div class="flex justify-between text-sm">
+            <span>Delivery Charge</span>
+            <span>৳49</span>
+          </div>
+          <div class="flex justify-between text-sm text-green-600">
+            <span>Discount</span>
+            <span>-৳10</span>
+          </div>
+          <div class="border-t pt-2 flex justify-between font-bold text-lg">
+            <span>Total Paid</span>
+            <span>৳194</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Delivery Information -->
+      <div class="space-y-6">
+        <!-- Delivery Address -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold mb-4">Delivery Address</h2>
+          <div class="space-y-2">
+            <p class="font-medium">John Doe</p>
+            <p class="text-gray-600">+880 1234567890</p>
+            <p class="text-gray-600">
+              House 123, Road 45<br>
+              Dhanmondi, Dhaka 1205<br>
+              Bangladesh
+            </p>
+          </div>
+        </div>
+
+        <!-- Order Status -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold mb-4">Order Status</h2>
+          
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-check text-white text-sm"></i>
+              </div>
+              <div>
+                <p class="font-medium">Order Confirmed</p>
+                <p class="text-sm text-gray-500">Dec 16, 2024 - 2:30 PM</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-box text-white text-sm"></i>
+              </div>
+              <div>
+                <p class="font-medium">Preparing Order</p>
+                <p class="text-sm text-gray-500">In progress...</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
+                <i class="fas fa-truck text-gray-500 text-sm"></i>
+              </div>
+              <div>
+                <p class="font-medium text-gray-500">Out for Delivery</p>
+                <p class="text-sm text-gray-400">Pending</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
+                <i class="fas fa-home text-gray-500 text-sm"></i>
+              </div>
+              <div>
+                <p class="font-medium text-gray-500">Delivered</p>
+                <p class="text-sm text-gray-400">Pending</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold mb-4">Need Help?</h2>
+          
+          <div class="space-y-3">
+            <button class="w-full bg-red-500 text-white py-3 rounded-lg hover:bg-red-600 font-semibold">
+              <i class="fas fa-phone mr-2"></i>
+              Call Support
+            </button>
+            
+            <button class="w-full border border-red-500 text-red-500 py-3 rounded-lg hover:bg-red-50 font-semibold">
+              <i class="fas fa-comments mr-2"></i>
+              Live Chat
+            </button>
+            
+            <button class="w-full border border-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-50 font-semibold">
+              <i class="fas fa-envelope mr-2"></i>
+              Email Us
+            </button>
+          </div>
+        </div>
+
+        <!-- Continue Shopping -->
+        <div class="text-center">
+          <a href="index.html" class="inline-flex items-center space-x-2 text-red-500 hover:text-red-600 font-medium">
+            <i class="fas fa-arrow-left"></i>
+            <span>Continue Shopping</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Tracking Info -->
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8">
+      <div class="flex items-start space-x-3">
+        <i class="fas fa-info-circle text-blue-500 text-lg mt-1"></i>
+        <div>
+          <h3 class="font-semibold text-blue-900 mb-2">Track Your Order</h3>
+          <p class="text-blue-800 text-sm mb-3">
+            You can track your order status in real-time through your account or by calling our support team.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <a href="account.html" class="bg-blue-500 text-white px-4 py-2 rounded text-sm hover:bg-blue-600">
+              View in Account
+            </a>
+            <a href="tel:+8801234567890" class="border border-blue-500 text-blue-500 px-4 py-2 rounded text-sm hover:bg-blue-50">
+              Call: +880 1234-567890
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Chaldal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

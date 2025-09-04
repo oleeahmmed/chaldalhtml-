@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaldal - Search Results</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-orange-400 shadow-md">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html">
+          <img src="https://i.chaldn.com/asset/egg-chaldal-web-release-id-27065/https/Default/components/header/Header/images/logo-small.png?q=low&webp=1&alpha=1" 
+               alt="Chaldal" class="h-8">
+        </a>
+        
+        <!-- Search Bar -->
+        <div class="flex-1 max-w-2xl mx-8">
+          <div class="relative">
+            <input type="text" value="tomato" placeholder="Search for products..." 
+                   class="w-full px-4 py-2 pr-12 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+            <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-500">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-4">
+          <button class="text-white hover:text-gray-200">
+            <i class="fas fa-user text-lg"></i>
+          </button>
+          <button class="text-white hover:text-gray-200 relative">
+            <i class="fas fa-shopping-bag text-lg"></i>
+            <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Results -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Search Info -->
+    <div class="mb-6">
+      <h1 class="text-2xl font-bold text-gray-900 mb-2">Search Results for "tomato"</h1>
+      <p class="text-gray-600">Found 12 products</p>
+    </div>
+
+    <div class="grid lg:grid-cols-4 gap-8">
+      <!-- Filters Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-lg font-semibold mb-4">Filters</h2>
+          
+          <!-- Category Filter -->
+          <div class="mb-6">
+            <h3 class="font-medium mb-3">Category</h3>
+            <div class="space-y-2">
+              <label class="flex items-center">
+                <input type="checkbox" checked class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">Vegetables (8)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">Fruits (2)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">Sauces (2)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="mb-6">
+            <h3 class="font-medium mb-3">Price Range</h3>
+            <div class="space-y-2">
+              <label class="flex items-center">
+                <input type="checkbox" class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">৳0 - ৳50 (6)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">৳50 - ৳100 (4)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">৳100+ (2)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Brand Filter -->
+          <div class="mb-6">
+            <h3 class="font-medium mb-3">Brand</h3>
+            <div class="space-y-2">
+              <label class="flex items-center">
+                <input type="checkbox" class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">Fresh Farm (5)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">Organic Plus (3)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="text-red-500 focus:ring-red-500 rounded">
+                <span class="ml-2 text-sm">Local Harvest (4)</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 font-medium">
+            Apply Filters
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="lg:col-span-3">
+        <!-- Sort Options -->
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center space-x-4">
+            <span class="text-gray-600">Sort by:</span>
+            <select class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-red-500 focus:border-red-500">
+              <option>Relevance</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest First</option>
+              <option>Customer Rating</option>
+            </select>
+          </div>
+          
+          <div class="flex items-center space-x-2">
+            <button class="p-2 border border-gray-300 rounded hover:bg-gray-50">
+              <i class="fas fa-th-large"></i>
+            </button>
+            <button class="p-2 border border-gray-300 rounded hover:bg-gray-50 bg-gray-100">
+              <i class="fas fa-list"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Product 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <a href="product-detail.html">
+              <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/1/1-1.1563456503.jpg" 
+                   alt="Fresh Tomatoes 1kg" class="w-full h-48 object-contain p-4">
+            </a>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-2">Fresh Tomatoes 1kg</h3>
+              <div class="flex items-center space-x-2 mb-3">
+                <span class="text-lg font-bold text-red-500">৳45</span>
+                <span class="text-sm text-gray-500 line-through">৳55</span>
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">18% OFF</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-1">
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star-half-alt text-xs"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">(24)</span>
+                </div>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/6/6-1.1563456503.jpg" 
+                 alt="Cherry Tomatoes 250g" class="w-full h-48 object-contain p-4">
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-2">Cherry Tomatoes 250g</h3>
+              <div class="flex items-center space-x-2 mb-3">
+                <span class="text-lg font-bold text-red-500">৳85</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-1">
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">(18)</span>
+                </div>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/7/7-1.1563456503.jpg" 
+                 alt="Tomato Sauce 500ml" class="w-full h-48 object-contain p-4">
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-2">Tomato Sauce 500ml</h3>
+              <div class="flex items-center space-x-2 mb-3">
+                <span class="text-lg font-bold text-red-500">৳120</span>
+                <span class="text-sm text-gray-500 line-through">৳140</span>
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">14% OFF</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-1">
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="far fa-star text-xs"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">(12)</span>
+                </div>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- More products... -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/8/8-1.1563456503.jpg" 
+                 alt="Organic Tomatoes 1kg" class="w-full h-48 object-contain p-4">
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-2">Organic Tomatoes 1kg</h3>
+              <div class="flex items-center space-x-2 mb-3">
+                <span class="text-lg font-bold text-red-500">৳65</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-1">
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">(31)</span>
+                </div>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/9/9-1.1563456503.jpg" 
+                 alt="Roma Tomatoes 500g" class="w-full h-48 object-contain p-4">
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-2">Roma Tomatoes 500g</h3>
+              <div class="flex items-center space-x-2 mb-3">
+                <span class="text-lg font-bold text-red-500">৳35</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-1">
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="far fa-star text-xs"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">(15)</span>
+                </div>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="https://i.chaldn.com/asset/Egg.Chaldal.com/1.0.0/1/images/products/10/10-1.1563456503.jpg" 
+                 alt="Tomato Paste 200g" class="w-full h-48 object-contain p-4">
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-2">Tomato Paste 200g</h3>
+              <div class="flex items-center space-x-2 mb-3">
+                <span class="text-lg font-bold text-red-500">৳95</span>
+                <span class="text-sm text-gray-500 line-through">৳110</span>
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">14% OFF</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-1">
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star-half-alt text-xs"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">(9)</span>
+                </div>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center justify-center space-x-2 mt-8">
+          <button class="px-3 py-2 border border-gray-300 rounded hover:bg-gray-50 disabled:opacity-50" disabled>
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="px-3 py-2 bg-red-500 text-white rounded">1</button>
+          <button class="px-3 py-2 border border-gray-300 rounded hover:bg-gray-50">2</button>
+          <button class="px-3 py-2 border border-gray-300 rounded hover:bg-gray-50">3</button>
+          <button class="px-3 py-2 border border-gray-300 rounded hover:bg-gray-50">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Chaldal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
