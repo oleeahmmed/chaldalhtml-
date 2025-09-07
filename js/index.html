@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anima App</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+  content: [],
+  theme: {
+    extend: {
+      fontFamily: {
+        ui_sans_serif: [
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji'
+        ],
+        sans_serif: [
+          'sans-serif'
+        ]
+      }
+    }
+  }
+};
+</script>
+
+</head>
+<body class="text-slate-950 text-base not-italic normal-nums font-normal accent-auto bg-zinc-50 box-border caret-transparent block tracking-[normal] leading-6 list-outside list-disc text-start indent-[0px] normal-case visible border-separate font-ui_sans_serif"><div class="box-border caret-transparent"><div role="region" aria-label="Notifications (F8)" class="box-border caret-transparent"><ol class="fixed box-border caret-transparent flex flex-col-reverse list-none max-h-[1000px] max-w-none w-full z-[100] p-4 right-auto top-0 bottom-auto md:flex-col md:max-w-[420px] md:right-0 md:top-auto md:bottom-0"></ol>
+</div>
+<section aria-label="Notifications alt+T" class="box-border caret-transparent"></section>
+<div class="bg-zinc-50 box-border caret-transparent min-h-[1000px] scroll-smooth"><header class="fixed text-white bg-[linear-gradient(135deg,rgb(255,87,36)_0%,rgb(255,137,41)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent block z-50 top-0 inset-x-0 md:hidden"><div class="items-center box-border caret-transparent flex justify-between p-4"><button data-menu-toggle class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-10 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-center text-nowrap w-10 p-0 rounded-[10px] md:min-h-0 md:min-w-0 hover:text-slate-900 hover:bg-white/20"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-1.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+<form class="box-border caret-transparent basis-[0%] grow min-h-[auto] min-w-[auto] mx-4 md:min-h-0 md:min-w-0"><div class="relative box-border caret-transparent"><input type="text" placeholder="Search products..." value="" class="text-gray-900 text-base box-border caret-transparent flex h-10 leading-6 w-full pl-3 pr-10 py-2 rounded-[10px] md:text-sm md:leading-5" />
+<button type="submit" class="absolute text-gray-500 text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap translate-y-[-50.0%] w-8 p-0 rounded-[10px] right-1 top-2/4 md:transform-none hover:text-orange-500 hover:bg-slate-100"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-2.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+</form>
+<div class="items-center box-border caret-transparent flex min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0"><button class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-10 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-center text-nowrap p-2 rounded-[10px] md:min-h-0 md:min-w-0 hover:text-slate-900 hover:bg-white/20"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-3.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+<span class="font-semibold box-border caret-transparent block min-h-[auto] min-w-[auto] text-nowrap ml-1 md:min-h-0 md:min-w-0">Dhaka</span>
+</button>
+</div>
+</div>
+</header>
+<header class="fixed text-white bg-[linear-gradient(135deg,rgb(255,87,36)_0%,rgb(255,137,41)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_20px_25px_-5px,rgba(0,0,0,0.1)_0px_8px_10px_-6px] box-border caret-transparent hidden z-50 top-0 inset-x-0 md:block"><div class="box-border caret-transparent w-full mx-auto px-6"><div class="items-center box-border caret-transparent flex h-16 justify-between"><div class="items-center box-border caret-transparent flex min-h-0 min-w-0 md:min-h-[auto] md:min-w-[auto]"><button data-menu-toggle class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-10 justify-center leading-5 min-h-0 min-w-0 gap-y-2 text-center text-nowrap w-10 p-0 rounded-[10px] md:min-h-[auto] md:min-w-[auto] hover:text-slate-900 hover:bg-white/20"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-4.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+<div class="items-center box-border caret-transparent flex min-h-0 min-w-0 ml-6 md:min-h-[auto] md:min-w-[auto]"><div class="text-2xl font-bold box-border caret-transparent leading-8 min-h-0 min-w-0 md:min-h-[auto] md:min-w-[auto]">Chaldal</div>
+<div class="text-sm box-border caret-transparent leading-5 min-h-0 min-w-0 opacity-80 ml-3 md:min-h-[auto] md:min-w-[auto]">Grocery</div>
+</div>
+</div>
+<form class="box-border caret-transparent basis-[0%] grow max-w-2xl min-h-0 min-w-0 mx-8 md:min-h-[auto] md:min-w-[auto]"><div class="relative box-border caret-transparent"><input type="text" placeholder="Search for products (e.g. eggs, milk, potato)" value="" class="text-gray-900 text-base box-border caret-transparent flex h-12 leading-6 w-full pl-3 pr-12 py-2 rounded-[10px] md:text-sm md:leading-5" />
+<button type="submit" class="absolute text-gray-500 text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap transform-none w-8 p-0 rounded-[10px] right-2 top-2/4 md:translate-y-[-50.0%] hover:text-orange-500 hover:bg-slate-100"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-5.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+</form>
+<div class="items-center box-border caret-transparent flex min-h-0 min-w-0 md:min-h-[auto] md:min-w-[auto]"><button class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-10 justify-center leading-5 min-h-0 min-w-0 gap-y-2 text-center text-nowrap px-4 py-2 rounded-[10px] md:min-h-[auto] md:min-w-[auto] hover:text-slate-900 hover:bg-white/20"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-6.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+<span class="font-semibold box-border caret-transparent block min-h-0 min-w-0 text-nowrap md:min-h-[auto] md:min-w-[auto]">Dhaka</span>
+</button>
+<div class="relative">
+<button data-cart-toggle class="relative text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-10 justify-center leading-5 min-h-0 min-w-0 gap-y-2 text-center text-nowrap ml-4 px-4 py-2 rounded-[10px] md:min-h-[auto] md:min-w-[auto] hover:text-slate-900 hover:bg-white/20">
+<img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-7.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+<span data-cart-count class="absolute -top-1 -right-1 bg-orange-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center" style="display: none;">0</span>
+</button>
+
+<!-- Cart Dropdown -->
+<div id="cartDropdown" data-dropdown class="absolute right-0 top-12 w-96 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 hidden">
+<div class="p-4 border-b border-gray-100">
+<div class="flex items-center justify-between">
+<h3 class="text-lg font-semibold text-gray-800 flex items-center">
+<svg class="w-5 h-5 mr-2 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9m-9 0V19a2 2 0 002 2h7a2 2 0 002-2v-4"></path>
+</svg>
+Your Cart (<span data-cart-count>0</span>)
+</h3>
+<button onclick="toggleCart()" class="text-gray-400 hover:text-gray-600">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+</svg>
+</button>
+</div>
+</div>
+
+<!-- Empty Cart State -->
+<div id="emptyCart" class="p-8 text-center">
+<svg class="w-16 h-16 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9m-9 0V19a2 2 0 002 2h7a2 2 0 002-2v-4"></path>
+</svg>
+<p class="text-gray-500 mb-4">Your cart is empty</p>
+<button onclick="toggleCart()" class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">Start Shopping</button>
+</div>
+
+<!-- Cart Content -->
+<div id="cartContent" class="hidden">
+<div id="cartItems" class="max-h-64 overflow-y-auto">
+<!-- Cart items will be populated here -->
+</div>
+
+<div class="p-4 border-t border-gray-100">
+<div class="space-y-2 mb-4">
+<div class="flex justify-between text-sm">
+<span class="text-gray-600">Subtotal (<span data-cart-count>0</span> items)</span>
+<span id="cartSubtotal" class="font-medium">৳0</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-gray-600">Delivery Fee</span>
+<span id="deliveryFee" class="text-gray-600">FREE</span>
+</div>
+<div class="flex justify-between text-lg font-semibold border-t pt-2">
+<span>Total</span>
+<span id="cartTotal" class="text-orange-600">৳0</span>
+</div>
+</div>
+<button class="w-full bg-orange-500 text-white py-3 rounded-lg font-medium hover:bg-orange-600 flex items-center justify-center">
+<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+</svg>
+Proceed to Checkout
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<aside class="fixed bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_20px_25px_-5px,rgba(0,0,0,0.1)_0px_8px_10px_-6px] box-border caret-transparent translate-x-[-100.0%] w-80 z-50 overflow-auto left-0 top-16 bottom-0 md:transform-none"><div class="items-center bg-[linear-gradient(135deg,rgb(255,87,36)_0%,rgb(255,137,41)_100%)] box-border caret-transparent flex justify-between p-4"><div class="items-center box-border caret-transparent flex"><h2 class="text-white text-lg font-bold box-border caret-transparent leading-7">Categories</h2>
+</div>
+<button data-menu-toggle class="text-white text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-10 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-center text-nowrap w-10 p-0 rounded-[10px] md:hidden md:min-h-0 md:min-w-0 hover:text-slate-900 hover:bg-white/20"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-8.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent gap-x-1 grid grid-cols-[repeat(3,minmax(0px,1fr))] gap-y-1"><button class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 flex h-9 justify-center leading-5 gap-y-2 text-center text-nowrap px-3 py-0 rounded-[10px] hover:bg-orange-500/90"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-9.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+<span class="box-border caret-transparent hidden min-h-0 min-w-0 text-nowrap md:block md:min-h-[auto] md:min-w-[auto]">Grocery</span>
+<span class="box-border caret-transparent block min-h-[auto] min-w-[auto] text-nowrap md:hidden md:min-h-0 md:min-w-0">Grocery</span>
+</button>
+<button class="text-gray-600 text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-9 justify-center leading-5 gap-y-2 text-center text-nowrap px-3 py-0 rounded-[10px] hover:text-slate-900 hover:bg-gray-100"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-10.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+<span class="box-border caret-transparent hidden min-h-0 min-w-0 text-nowrap md:block md:min-h-[auto] md:min-w-[auto]">Pharmacy</span>
+<span class="box-border caret-transparent block min-h-[auto] min-w-[auto] text-nowrap md:hidden md:min-h-0 md:min-w-0">Pharmacy</span>
+</button>
+<button class="text-gray-600 text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex h-9 justify-center leading-5 gap-y-2 text-center text-nowrap px-3 py-0 rounded-[10px] hover:text-slate-900 hover:bg-gray-100"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-11.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+<span class="box-border caret-transparent hidden min-h-0 min-w-0 text-nowrap md:block md:min-h-[auto] md:min-w-[auto]">Cookups</span>
+<span class="box-border caret-transparent block min-h-[auto] min-w-[auto] text-nowrap md:hidden md:min-h-0 md:min-w-0">Cookups</span>
+</button>
+</div>
+<div class="box-border caret-transparent mt-4"><h3 class="text-gray-700 text-sm font-semibold box-border caret-transparent leading-5 mb-3">Grocery Categories</h3>
+<div class="box-border caret-transparent mt-2"><button class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 inline-flex h-10 justify-between leading-5 gap-y-2 text-left text-nowrap w-full p-3 rounded-[10px] hover:text-slate-900 hover:bg-gray-100"><div class="items-center box-border caret-transparent flex text-nowrap"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-12.svg" alt="Icon" class="text-orange-500 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+<span class="text-gray-700 box-border caret-transparent block text-nowrap ml-3">Food &amp; Beverages</span>
+</div>
+<img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-13.svg" alt="Icon" class="text-gray-400 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent mt-2"><button class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 inline-flex h-10 justify-between leading-5 gap-y-2 text-left text-nowrap w-full p-3 rounded-[10px] hover:text-slate-900 hover:bg-gray-100"><div class="items-center box-border caret-transparent flex text-nowrap"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-14.svg" alt="Icon" class="text-orange-500 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+<span class="text-gray-700 box-border caret-transparent block text-nowrap ml-3">Fruits &amp; Vegetables</span>
+</div>
+<img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-13.svg" alt="Icon" class="text-gray-400 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent mt-2"><button class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 inline-flex h-10 justify-between leading-5 gap-y-2 text-left text-nowrap w-full p-3 rounded-[10px] hover:text-slate-900 hover:bg-gray-100"><div class="items-center box-border caret-transparent flex text-nowrap"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-15.svg" alt="Icon" class="text-orange-500 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+<span class="text-gray-700 box-border caret-transparent block text-nowrap ml-3">Dairy &amp; Bakery</span>
+</div>
+<img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-13.svg" alt="Icon" class="text-gray-400 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent mt-2"><button class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 inline-flex h-10 justify-between leading-5 gap-y-2 text-left text-nowrap w-full p-3 rounded-[10px] hover:text-slate-900 hover:bg-gray-100"><div class="items-center box-border caret-transparent flex text-nowrap"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-16.svg" alt="Icon" class="text-orange-500 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+<span class="text-gray-700 box-border caret-transparent block text-nowrap ml-3">Baby Care</span>
+</div>
+<img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-13.svg" alt="Icon" class="text-gray-400 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent mt-2"><button class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 inline-flex h-10 justify-between leading-5 gap-y-2 text-left text-nowrap w-full p-3 rounded-[10px] hover:text-slate-900 hover:bg-gray-100"><div class="items-center box-border caret-transparent flex text-nowrap"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-17.svg" alt="Icon" class="text-orange-500 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+<span class="text-gray-700 box-border caret-transparent block text-nowrap ml-3">Home &amp; Kitchen</span>
+</div>
+<img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-13.svg" alt="Icon" class="text-gray-400 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent mt-2"><button class="text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 inline-flex h-10 justify-between leading-5 gap-y-2 text-left text-nowrap w-full p-3 rounded-[10px] hover:text-slate-900 hover:bg-gray-100"><div class="items-center box-border caret-transparent flex text-nowrap"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-18.svg" alt="Icon" class="text-orange-500 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+<span class="text-gray-700 box-border caret-transparent block text-nowrap ml-3">Beauty &amp; Personal Care</span>
+</div>
+<img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-13.svg" alt="Icon" class="text-gray-400 box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+</div>
+<div class="box-border caret-transparent hidden border-slate-200 mt-4 pt-4 border-t border-solid md:block"><button data-collapse class="text-sm font-medium items-center bg-zinc-50 caret-transparent gap-x-2 inline-flex h-9 justify-center leading-5 gap-y-2 text-center text-nowrap w-full border border-slate-200 px-3 py-0 rounded-[10px] border-solid hover:text-slate-900 hover:bg-slate-100">Collapse</button>
+</div>
+</div>
+</aside>
+<main class="box-border caret-transparent ml-0 md:ml-80"><section class="relative bg-[linear-gradient(135deg,rgba(255,87,36,0.95)_0%,rgba(255,137,41,0.95)_100%)] box-border caret-transparent overflow-hidden"><div class="absolute box-border caret-transparent inset-0"><img src="/assets/hero-groceries-B05gk8eI.jpg" alt="Fresh Groceries" class="box-border caret-transparent h-full max-w-full object-cover opacity-20 w-full" />
+<div class="absolute bg-[linear-gradient(to_right,rgba(255,87,36,0.9),rgba(255,137,41,0.8))] box-border caret-transparent inset-0"></div>
+</div>
+<div class="relative box-border caret-transparent w-full mx-auto px-4 py-16 md:py-24"><div class="text-white box-border caret-transparent max-w-4xl text-center mx-auto"><h1 class="text-4xl font-bold box-border caret-transparent leading-10 mb-6 md:text-6xl md:leading-[60px]">Fresh Groceries<span class="text-orange-400 text-4xl box-border caret-transparent block leading-10 md:text-6xl md:leading-[60px]">Delivered Fast</span>
+</h1>
+<p class="text-xl box-border caret-transparent leading-7 mb-8 md:text-2xl md:leading-8">Get fresh produce, daily essentials, and more delivered to your doorstep in Dhaka</p>
+<form class="box-border caret-transparent max-w-2xl mb-12 mx-auto"><div class="relative bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_20px_25px_-5px,rgba(0,0,0,0.1)_0px_8px_10px_-6px] box-border caret-transparent p-2 rounded-full"><input type="text" name="search" placeholder="Search for products like eggs, milk, vegetables..." class="text-gray-800 text-lg bg-transparent box-border caret-transparent flex h-10 leading-7 text-start w-full pl-6 pr-20 py-4 rounded-[10px] md:text-sm md:leading-5" />
+<button type="submit" class="absolute text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] caret-transparent gap-x-2 flex h-11 justify-center leading-5 gap-y-2 text-nowrap translate-y-[-50.0%] px-8 py-0 rounded-full right-2 top-2/4"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-19.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Search</button>
+</div>
+</form>
+<div class="box-border caret-transparent gap-x-4 flex flex-wrap justify-center gap-y-4 mb-16"><button class="text-sm font-medium items-center backdrop-blur-sm bg-white/20 caret-transparent gap-x-2 flex h-11 justify-center leading-5 gap-y-2 text-nowrap px-8 py-0 rounded-[10px] hover:bg-white/30"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-20.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Start Shopping</button>
+<button class="text-sm font-medium items-center backdrop-blur-sm bg-zinc-50 caret-transparent gap-x-2 flex h-11 justify-center leading-5 gap-y-2 text-nowrap border px-8 py-0 rounded-[10px] border-solid border-white/50 hover:text-slate-900 hover:bg-white/20">View Categories</button>
+</div>
+</div>
+<div class="box-border caret-transparent gap-x-6 grid grid-cols-none max-w-4xl gap-y-6 mx-auto md:grid-cols-[repeat(3,minmax(0px,1fr))]"><div class="text-white backdrop-blur-sm bg-white/10 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent border rounded-xl border-solid border-white/20"><div class="box-border caret-transparent text-center p-6"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-21.svg" alt="Icon" class="text-orange-400 box-border caret-transparent h-12 w-12 mb-4 mx-auto" />
+<h3 class="text-lg font-semibold box-border caret-transparent leading-7 mb-2">Quick Delivery</h3>
+<p class="text-sm box-border caret-transparent leading-5 opacity-90">Get your groceries delivered in 30 minutes</p>
+</div>
+</div>
+<div class="text-white backdrop-blur-sm bg-white/10 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent border rounded-xl border-solid border-white/20"><div class="box-border caret-transparent text-center p-6"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-22.svg" alt="Icon" class="text-orange-400 box-border caret-transparent h-12 w-12 mb-4 mx-auto" />
+<h3 class="text-lg font-semibold box-border caret-transparent leading-7 mb-2">Free Shipping</h3>
+<p class="text-sm box-border caret-transparent leading-5 opacity-90">Free delivery on orders above ৳500</p>
+</div>
+</div>
+<div class="text-white backdrop-blur-sm bg-white/10 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent border rounded-xl border-solid border-white/20"><div class="box-border caret-transparent text-center p-6"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-23.svg" alt="Icon" class="text-orange-400 box-border caret-transparent h-12 w-12 mb-4 mx-auto" />
+<h3 class="text-lg font-semibold box-border caret-transparent leading-7 mb-2">Quality Guaranteed</h3>
+<p class="text-sm box-border caret-transparent leading-5 opacity-90">Fresh products or your money back</p>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute box-border caret-transparent w-full left-0 bottom-0"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-24.svg" alt="Icon" class="box-border caret-transparent w-full" />
+</div>
+</section>
+<section class="box-border caret-transparent py-16"><div class="box-border caret-transparent w-full mx-auto px-4"><div class="box-border caret-transparent text-center mb-12"><h2 class="text-gray-800 text-3xl font-bold box-border caret-transparent leading-9 mb-4 md:text-4xl md:leading-10">Shop by Category</h2>
+<p class="text-gray-600 text-lg box-border caret-transparent leading-7 max-w-2xl mx-auto">Discover fresh groceries, daily essentials, and more across our wide range of categories</p>
+</div>
+<div class="box-border caret-transparent gap-x-6 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-6 md:grid-cols-[repeat(3,minmax(0px,1fr))]"><div class="bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent rounded-xl border-2 border-solid border-transparent hover:shadow-[rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.05)_0px_4px_6px_-2px] hover:border-orange-500/20"><div class="box-border caret-transparent p-6"><div class="items-start box-border caret-transparent flex"><div class="text-white bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent p-3 rounded-xl"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-25.svg" alt="Icon" class="box-border caret-transparent h-8 w-8" />
+</div>
+<div class="box-border caret-transparent basis-[0%] grow ml-4"><h3 class="text-gray-800 text-xl font-semibold box-border caret-transparent leading-7 mb-2">Food &amp; Beverages</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent flow-root leading-5 overflow-hidden mb-3">Snacks, drinks, and pantry essentials</p>
+<div class="items-center box-border caret-transparent flex justify-between"><span class="text-gray-500 text-xs bg-gray-100 box-border caret-transparent block leading-4 px-2 py-1 rounded-full">1,250 items</span>
+<span class="text-orange-500 text-sm font-medium box-border caret-transparent block leading-5">Shop Now →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent rounded-xl border-2 border-solid border-transparent hover:shadow-[rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.05)_0px_4px_6px_-2px] hover:border-orange-500/20"><div class="box-border caret-transparent p-6"><div class="items-start box-border caret-transparent flex"><div class="text-white bg-green-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent p-3 rounded-xl"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-26.svg" alt="Icon" class="box-border caret-transparent h-8 w-8" />
+</div>
+<div class="box-border caret-transparent basis-[0%] grow ml-4"><h3 class="text-gray-800 text-xl font-semibold box-border caret-transparent leading-7 mb-2">Fruits &amp; Vegetables</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent flow-root leading-5 overflow-hidden mb-3">Fresh produce delivered daily</p>
+<div class="items-center box-border caret-transparent flex justify-between"><span class="text-gray-500 text-xs bg-gray-100 box-border caret-transparent block leading-4 px-2 py-1 rounded-full">450 items</span>
+<span class="text-orange-500 text-sm font-medium box-border caret-transparent block leading-5">Shop Now →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent rounded-xl border-2 border-solid border-transparent hover:shadow-[rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.05)_0px_4px_6px_-2px] hover:border-orange-500/20"><div class="box-border caret-transparent p-6"><div class="items-start box-border caret-transparent flex"><div class="text-white bg-pink-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent p-3 rounded-xl"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-27.svg" alt="Icon" class="box-border caret-transparent h-8 w-8" />
+</div>
+<div class="box-border caret-transparent basis-[0%] grow ml-4"><h3 class="text-gray-800 text-xl font-semibold box-border caret-transparent leading-7 mb-2">Baby Care</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent flow-root leading-5 overflow-hidden mb-3">Diapers, baby food, and essentials</p>
+<div class="items-center box-border caret-transparent flex justify-between"><span class="text-gray-500 text-xs bg-gray-100 box-border caret-transparent block leading-4 px-2 py-1 rounded-full">320 items</span>
+<span class="text-orange-500 text-sm font-medium box-border caret-transparent block leading-5">Shop Now →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent rounded-xl border-2 border-solid border-transparent hover:shadow-[rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.05)_0px_4px_6px_-2px] hover:border-orange-500/20"><div class="box-border caret-transparent p-6"><div class="items-start box-border caret-transparent flex"><div class="text-white bg-blue-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent p-3 rounded-xl"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-28.svg" alt="Icon" class="box-border caret-transparent h-8 w-8" />
+</div>
+<div class="box-border caret-transparent basis-[0%] grow ml-4"><h3 class="text-gray-800 text-xl font-semibold box-border caret-transparent leading-7 mb-2">Home &amp; Kitchen</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent flow-root leading-5 overflow-hidden mb-3">Cleaning supplies and kitchen tools</p>
+<div class="items-center box-border caret-transparent flex justify-between"><span class="text-gray-500 text-xs bg-gray-100 box-border caret-transparent block leading-4 px-2 py-1 rounded-full">890 items</span>
+<span class="text-orange-500 text-sm font-medium box-border caret-transparent block leading-5">Shop Now →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent rounded-xl border-2 border-solid border-transparent hover:shadow-[rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.05)_0px_4px_6px_-2px] hover:border-orange-500/20"><div class="box-border caret-transparent p-6"><div class="items-start box-border caret-transparent flex"><div class="text-white bg-purple-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent p-3 rounded-xl"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-29.svg" alt="Icon" class="box-border caret-transparent h-8 w-8" />
+</div>
+<div class="box-border caret-transparent basis-[0%] grow ml-4"><h3 class="text-gray-800 text-xl font-semibold box-border caret-transparent leading-7 mb-2">Beauty &amp; Personal Care</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent flow-root leading-5 overflow-hidden mb-3">Skincare, haircare, and cosmetics</p>
+<div class="items-center box-border caret-transparent flex justify-between"><span class="text-gray-500 text-xs bg-gray-100 box-border caret-transparent block leading-4 px-2 py-1 rounded-full">670 items</span>
+<span class="text-orange-500 text-sm font-medium box-border caret-transparent block leading-5">Shop Now →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent rounded-xl border-2 border-solid border-transparent hover:shadow-[rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.05)_0px_4px_6px_-2px] hover:border-orange-500/20"><div class="box-border caret-transparent p-6"><div class="items-start box-border caret-transparent flex"><div class="text-white bg-red-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent p-3 rounded-xl"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-30.svg" alt="Icon" class="box-border caret-transparent h-8 w-8" />
+</div>
+<div class="box-border caret-transparent basis-[0%] grow ml-4"><h3 class="text-gray-800 text-xl font-semibold box-border caret-transparent leading-7 mb-2">Pharmacy</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent flow-root leading-5 overflow-hidden mb-3">Medicines and health products</p>
+<div class="items-center box-border caret-transparent flex justify-between"><span class="text-gray-500 text-xs bg-gray-100 box-border caret-transparent block leading-4 px-2 py-1 rounded-full">280 items</span>
+<span class="text-orange-500 text-sm font-medium box-border caret-transparent block leading-5">Shop Now →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-gray-50 box-border caret-transparent py-16"><div class="box-border caret-transparent w-full mx-auto px-4"><div class="box-border caret-transparent text-center mb-12"><h2 class="text-gray-800 text-3xl font-bold box-border caret-transparent leading-9 mb-4 md:text-4xl md:leading-10">Featured Products</h2>
+<p class="text-gray-600 text-lg box-border caret-transparent leading-7 max-w-2xl mx-auto">Discover our handpicked selection of fresh groceries and daily essentials</p>
+</div>
+<div class="items-center box-border caret-transparent gap-x-4 flex flex-wrap justify-between gap-y-4 mb-8"><div class="box-border caret-transparent gap-x-2 flex flex-wrap gap-y-2"><button data-filter="all" class="text-white text-sm font-medium items-center bg-orange-500 caret-transparent gap-x-2 flex h-9 justify-center leading-5 gap-y-2 text-center text-nowrap px-3 py-0 rounded-[10px] hover:bg-orange-500/90">All Products</button>
+<button data-filter="food-beverages" class="text-sm font-medium items-center bg-zinc-50 caret-transparent gap-x-2 flex h-9 justify-center leading-5 gap-y-2 text-center capitalize text-nowrap border border-slate-200 px-3 py-0 rounded-[10px] border-solid hover:text-slate-900 hover:bg-slate-100">food beverages</button>
+<button data-filter="fruits-vegetables" class="text-sm font-medium items-center bg-zinc-50 caret-transparent gap-x-2 flex h-9 justify-center leading-5 gap-y-2 text-center capitalize text-nowrap border border-slate-200 px-3 py-0 rounded-[10px] border-solid hover:text-slate-900 hover:bg-slate-100">fruits vegetables</button>
+<button data-filter="dairy" class="text-sm font-medium items-center bg-zinc-50 caret-transparent gap-x-2 flex h-9 justify-center leading-5 gap-y-2 text-center capitalize text-nowrap border border-slate-200 px-3 py-0 rounded-[10px] border-solid hover:text-slate-900 hover:bg-slate-100">dairy</button>
+<button data-filter="meat" class="text-sm font-medium items-center bg-zinc-50 caret-transparent gap-x-2 flex h-9 justify-center leading-5 gap-y-2 text-center capitalize text-nowrap border border-slate-200 px-3 py-0 rounded-[10px] border-solid hover:text-slate-900 hover:bg-slate-100">meat</button>
+</div>
+<select class="text-sm bg-zinc-100 caret-transparent block leading-[normal] border-gray-300 px-3 py-2 rounded-xl"><option value="popular" class="items-center box-border caret-transparent gap-x-[7px] min-h-6 min-w-6 gap-y-[7px]">Most Popular</option>
+<option value="price-low" class="items-center box-border caret-transparent gap-x-[7px] min-h-6 min-w-6 gap-y-[7px]">Price: Low to High</option>
+<option value="price-high" class="items-center box-border caret-transparent gap-x-[7px] min-h-6 min-w-6 gap-y-[7px]">Price: High to Low</option>
+<option value="rating" class="items-center box-border caret-transparent gap-x-[7px] min-h-6 min-w-6 gap-y-[7px]">Highest Rated</option>
+</select>
+</div>
+<div class="box-border caret-transparent gap-x-6 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-6 md:grid-cols-[repeat(4,minmax(0px,1fr))]"><div data-product data-product-id="milk-1" data-category="dairy" data-price="65" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/1.jpg" alt="Fresh Milk" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Fresh Milk</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">1L</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(203)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳65</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+<div data-quantity-controls class="hidden bg-white border border-gray-200 rounded-lg p-2 mt-3 flex items-center justify-center space-x-3">
+<button onclick="updateProductQuantity('milk-1', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">−</span>
+</button>
+<span data-quantity-display class="font-medium text-gray-800 min-w-[20px] text-center">1</span>
+<button onclick="updateProductQuantity('milk-1', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">+</span>
+</button>
+</div>
+</div>
+</div>
+<div data-product data-product-id="rice-1" data-category="food-beverages" data-price="320" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/2.jpg" alt="Basmati Rice" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+<div class="absolute text-white text-xs font-semibold items-center bg-red-500 box-border caret-transparent flex leading-4 border px-2.5 py-0.5 rounded-full border-solid border-transparent left-2 top-2">8% OFF</div>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Basmati Rice</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">2kg</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(156)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳320</span>
+<span class="text-gray-500 text-sm box-border caret-transparent block leading-5 line-through ml-2">৳350</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+<div data-quantity-controls class="hidden bg-white border border-gray-200 rounded-lg p-2 mt-3 flex items-center justify-center space-x-3">
+<button onclick="updateProductQuantity('rice-1', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">−</span>
+</button>
+<span data-quantity-display class="font-medium text-gray-800 min-w-[20px] text-center">1</span>
+<button onclick="updateProductQuantity('rice-1', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">+</span>
+</button>
+</div>
+</div>
+</div>
+<div data-product data-product-id="oil-1" data-category="food-beverages" data-price="450" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/3.jpg" alt="Extra Virgin Olive Oil" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+<div class="absolute text-white text-xs font-semibold items-center bg-red-500 box-border caret-transparent flex leading-4 border px-2.5 py-0.5 rounded-full border-solid border-transparent left-2 top-2">10% OFF</div>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Extra Virgin Olive Oil</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">500ml</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(128)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳450</span>
+<span class="text-gray-500 text-sm box-border caret-transparent block leading-5 line-through ml-2">৳500</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+<div data-quantity-controls class="hidden bg-white border border-gray-200 rounded-lg p-2 mt-3 flex items-center justify-center space-x-3">
+<button onclick="updateProductQuantity('oil-1', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">−</span>
+</button>
+<span data-quantity-display class="font-medium text-gray-800 min-w-[20px] text-center">1</span>
+<button onclick="updateProductQuantity('oil-1', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">+</span>
+</button>
+</div>
+</div>
+</div>
+<div data-product data-product-id="apple-1" data-category="fruits-vegetables" data-price="250" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/4.jpg" alt="Fresh Red Apples" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Fresh Red Apples</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">1kg</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(95)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳250</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+<div data-quantity-controls class="hidden bg-white border border-gray-200 rounded-lg p-2 mt-3 flex items-center justify-center space-x-3">
+<button onclick="updateProductQuantity('apple-1', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">−</span>
+</button>
+<span data-quantity-display class="font-medium text-gray-800 min-w-[20px] text-center">1</span>
+<button onclick="updateProductQuantity('apple-1', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">+</span>
+</button>
+</div>
+</div>
+</div>
+<div data-product data-product-id="egg-1" data-category="dairy" data-price="180" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/5.jpg" alt="Farm Fresh Eggs" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Farm Fresh Eggs</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">12 pieces</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(89)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳180</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+<div data-quantity-controls class="hidden bg-white border border-gray-200 rounded-lg p-2 mt-3 flex items-center justify-center space-x-3">
+<button onclick="updateProductQuantity('egg-1', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">−</span>
+</button>
+<span data-quantity-display class="font-medium text-gray-800 min-w-[20px] text-center">1</span>
+<button onclick="updateProductQuantity('egg-1', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">+</span>
+</button>
+</div>
+</div>
+</div>
+<div data-product data-product-id="banana-1" data-category="fruits-vegetables" data-price="170" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/6.jpg" alt="Organic Bananas" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+<div class="absolute text-white text-xs font-semibold items-center bg-red-500 box-border caret-transparent flex leading-4 border px-2.5 py-0.5 rounded-full border-solid border-transparent left-2 top-2">15% OFF</div>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Organic Bananas</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">1kg</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(76)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳170</span>
+<span class="text-gray-500 text-sm box-border caret-transparent block leading-5 line-through ml-2">৳200</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+<div data-quantity-controls class="hidden bg-white border border-gray-200 rounded-lg p-2 mt-3 flex items-center justify-center space-x-3">
+<button onclick="updateProductQuantity('banana-1', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">−</span>
+</button>
+<span data-quantity-display class="font-medium text-gray-800 min-w-[20px] text-center">1</span>
+<button onclick="updateProductQuantity('banana-1', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">+</span>
+</button>
+</div>
+</div>
+</div>
+<div data-product data-product-id="chicken-1" data-category="meat" data-price="580" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/7.jpg" alt="Chicken Breast" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Chicken Breast</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">1kg</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(67)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳580</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+<div data-quantity-controls class="hidden bg-white border border-gray-200 rounded-lg p-2 mt-3 flex items-center justify-center space-x-3">
+<button onclick="updateProductQuantity('chicken-1', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">−</span>
+</button>
+<span data-quantity-display class="font-medium text-gray-800 min-w-[20px] text-center">1</span>
+<button onclick="updateProductQuantity('chicken-1', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">+</span>
+</button>
+</div>
+</div>
+</div>
+<div data-product data-product-id="bread-1" data-category="food-beverages" data-price="120" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/8.jpg" alt="Whole Wheat Bread" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Whole Wheat Bread</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">400g</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(45)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳120</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+<div data-quantity-controls class="hidden bg-white border border-gray-200 rounded-lg p-2 mt-3 flex items-center justify-center space-x-3">
+<button onclick="updateProductQuantity('bread-1', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">−</span>
+</button>
+<span data-quantity-display class="font-medium text-gray-800 min-w-[20px] text-center">1</span>
+<button onclick="updateProductQuantity('bread-1', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+<span class="text-gray-600">+</span>
+</button>
+</div>
+</div>
+</div>
+<div data-product data-category="dairy" data-price="180" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/5.jpg" alt="Farm Fresh Eggs" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Farm Fresh Eggs</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">12 pieces</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(89)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳180</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+</div>
+</div>
+<div data-product data-category="fruits-vegetables" data-price="170" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/6.jpg" alt="Organic Bananas" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+<div class="absolute text-white text-xs font-semibold items-center bg-red-500 box-border caret-transparent flex leading-4 border px-2.5 py-0.5 rounded-full border-solid border-transparent left-2 top-2">15% OFF</div>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Organic Bananas</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">1kg</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(76)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳170</span>
+<span class="text-gray-500 text-sm box-border caret-transparent block leading-5 line-through ml-2">৳200</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+</div>
+</div>
+<div data-product data-category="meat" data-price="580" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/7.jpg" alt="Chicken Breast" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Chicken Breast</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">1kg</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(67)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳580</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+</div>
+</div>
+<div data-product data-category="food-beverages" data-price="120" data-rating="4.0" class="relative bg-[linear-gradient(145deg,rgb(255,255,255)_0%,rgb(250,250,250)_100%)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] box-border caret-transparent overflow-hidden rounded-xl border-2 border-solid border-transparent"><div class="relative box-border caret-transparent overflow-hidden"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/8.jpg" alt="Whole Wheat Bread" class="box-border caret-transparent h-48 max-w-full object-cover w-full md:h-56" />
+<button data-wishlist class="absolute text-gray-600 text-sm font-medium items-center backdrop-blur-sm bg-white/80 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap w-8 p-0 rounded-full right-2 top-2 hover:text-red-500 hover:bg-white"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-31.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+<div class="box-border caret-transparent p-4"><div class="box-border caret-transparent"><h3 class="text-gray-800 font-semibold box-border caret-transparent flow-root overflow-hidden">Whole Wheat Bread</h3>
+<p class="text-gray-600 text-sm box-border caret-transparent leading-5 mt-1">400g</p>
+</div>
+<div class="items-center box-border caret-transparent flex mt-3"><div class="items-center box-border caret-transparent flex"><span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-yellow-400 text-xs box-border caret-transparent block leading-4">★</span>
+<span class="text-gray-300 text-xs box-border caret-transparent block leading-4">★</span>
+</div>
+<span class="text-gray-500 text-xs box-border caret-transparent block leading-4 ml-1">(45)</span>
+</div>
+<div class="items-center box-border caret-transparent flex justify-between mt-3"><div class="box-border caret-transparent"><div class="items-center box-border caret-transparent flex"><span class="text-gray-800 text-lg font-bold box-border caret-transparent block leading-7">৳120</span>
+</div>
+</div>
+</div>
+<button data-add-to-cart class="text-white text-sm font-medium items-center bg-orange-500 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] caret-transparent gap-x-2 inline-flex h-10 justify-center leading-5 gap-y-2 text-center text-nowrap w-full mt-3 px-4 py-2 rounded-[10px] hover:shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px]"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-34.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mr-2" />
+Add to Cart</button>
+</div>
+</div>
+</div>
+<div class="box-border caret-transparent text-center mt-12"><button class="text-sm font-medium items-center bg-zinc-50 caret-transparent gap-x-2 inline-flex h-11 justify-center leading-5 gap-y-2 text-nowrap border border-slate-200 px-8 py-0 rounded-[10px] border-solid hover:text-white hover:bg-orange-500">View All Products</button>
+</div>
+<div class="box-border caret-transparent flex justify-center mt-8"><div class="text-white text-sm font-semibold items-center bg-orange-400 box-border caret-transparent flex leading-5 border px-4 py-2 rounded-full border-solid border-transparent">Showing 8 of 8 products</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="text-white bg-gray-900 box-border caret-transparent"><div class="box-border caret-transparent w-full mx-auto px-4 py-12"><div class="box-border caret-transparent gap-x-8 grid grid-cols-[repeat(1,minmax(0px,1fr))] gap-y-8 md:grid-cols-[repeat(4,minmax(0px,1fr))]"><div class="box-border caret-transparent"><div class="box-border caret-transparent"><h3 class="text-orange-500 text-2xl font-bold box-border caret-transparent leading-8 mb-2">Chaldal</h3>
+<p class="text-gray-300 text-sm box-border caret-transparent leading-[22.75px]">Your trusted online grocery store delivering fresh and quality products right to your doorstep across Dhaka. Shop smart, live better.</p>
+</div>
+<div class="box-border caret-transparent mt-6"><div class="text-gray-300 text-sm items-center box-border caret-transparent flex leading-5"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-35.svg" alt="Icon" class="text-orange-500 box-border caret-transparent h-4 w-4" />
+<span class="box-border caret-transparent block ml-3">+880 1234-567890</span>
+</div>
+<div class="text-gray-300 text-sm items-center box-border caret-transparent flex leading-5 mt-3"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-36.svg" alt="Icon" class="text-orange-500 box-border caret-transparent h-4 w-4" />
+<span class="box-border caret-transparent block ml-3">support@chaldal.com</span>
+</div>
+<div class="text-gray-300 text-sm items-center box-border caret-transparent flex leading-5 mt-3"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-37.svg" alt="Icon" class="text-orange-500 box-border caret-transparent h-4 w-4" />
+<span class="box-border caret-transparent block ml-3">Dhaka, Bangladesh</span>
+</div>
+</div>
+<div class="box-border caret-transparent flex mt-6"><a href="https://facebook.com/" aria-label="Facebook" class="bg-gray-800 box-border caret-transparent block p-2 rounded-xl hover:bg-orange-500"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-38.svg" alt="Icon" class="box-border caret-transparent h-5 w-5" />
+</a>
+<a href="https://twitter.com/" aria-label="Twitter" class="bg-gray-800 box-border caret-transparent block ml-4 p-2 rounded-xl hover:bg-orange-500"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-39.svg" alt="Icon" class="box-border caret-transparent h-5 w-5" />
+</a>
+<a href="https://instagram.com/" aria-label="Instagram" class="bg-gray-800 box-border caret-transparent block ml-4 p-2 rounded-xl hover:bg-orange-500"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-40.svg" alt="Icon" class="box-border caret-transparent h-5 w-5" />
+</a>
+<a href="https://linkedin.com/" aria-label="LinkedIn" class="bg-gray-800 box-border caret-transparent block ml-4 p-2 rounded-xl hover:bg-orange-500"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-41.svg" alt="Icon" class="box-border caret-transparent h-5 w-5" />
+</a>
+</div>
+</div>
+<div class="box-border caret-transparent"><h4 class="text-lg font-semibold box-border caret-transparent leading-7 mb-6">Company</h4>
+<ul class="box-border caret-transparent list-none pl-0"><li class="box-border caret-transparent text-left"><a href="/about" class="text-gray-300 text-sm box-border caret-transparent leading-5 hover:text-orange-500">About Us</a>
+</li>
+<li class="box-border caret-transparent text-left mt-3"><a href="/careers" class="text-gray-300 text-sm box-border caret-transparent leading-5 hover:text-orange-500">Careers</a>
+</li>
+<li class="box-border caret-transparent text-left mt-3"><a href="/press" class="text-gray-300 text-sm box-border caret-transparent leading-5 hover:text-orange-500">Press</a>
+</li>
+<li class="box-border caret-transparent text-left mt-3"><a href="/contact" class="text-gray-300 text-sm box-border caret-transparent leading-5 hover:text-orange-500">Contact Us</a>
+</li>
+</ul>
+</div>
+<div class="box-border caret-transparent"><h4 class="text-lg font-semibold box-border caret-transparent leading-7 mb-6">Customer Support</h4>
+<ul class="box-border caret-transparent list-none pl-0"><li class="box-border caret-transparent text-left"><a href="/help" class="text-gray-300 text-sm box-border caret-transparent leading-5 hover:text-orange-500">Help Center</a>
+</li>
+<li class="box-border caret-transparent text-left mt-3"><a href="/track" class="text-gray-300 text-sm box-border caret-transparent leading-5 hover:text-orange-500">Track Your Order</a>
+</li>
+<li class="box-border caret-transparent text-left mt-3"><a href="/returns" class="text-gray-300 text-sm box-border caret-transparent leading-5 hover:text-orange-500">Returns &amp; Refunds</a>
+</li>
+<li class="box-border caret-transparent text-left mt-3"><a href="/delivery" class="text-gray-300 text-sm box-border caret-transparent leading-5 hover:text-orange-500">Delivery Info</a>
+</li>
+</ul>
+</div>
+<div class="box-border caret-transparent"><h4 class="text-lg font-semibold box-border caret-transparent leading-7 mb-6">Stay Updated</h4>
+<p class="text-gray-300 text-sm box-border caret-transparent leading-5 mb-4">Subscribe to our newsletter for exclusive offers, new product updates, and grocery tips.</p>
+<form class="box-border caret-transparent"><div class="relative box-border caret-transparent"><input type="email" placeholder="Enter your email" value="" class="text-base bg-gray-800 box-border caret-transparent flex h-10 leading-6 w-full border border-gray-700 pl-3 pr-12 py-2 rounded-[10px] border-solid md:text-sm md:leading-5" />
+<button type="submit" class="absolute text-sm font-medium items-center bg-orange-500 caret-transparent gap-x-2 flex h-8 justify-center leading-5 gap-y-2 text-center text-nowrap translate-y-[-50.0%] w-8 p-0 rounded-[10px] right-1 top-2/4"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-42.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4" />
+</button>
+</div>
+</form>
+<p class="text-gray-400 text-xs box-border caret-transparent leading-4 mt-3">By subscribing, you agree to our Privacy Policy</p>
+</div>
+</div>
+</div>
+<div role="none" class="bg-gray-800 box-border caret-transparent shrink-0 h-px w-full"></div>
+<div class="box-border caret-transparent w-full mx-auto px-4 py-6"><div class="items-center box-border caret-transparent flex flex-col justify-between md:flex-row"><div class="text-gray-400 text-sm box-border caret-transparent leading-5">© 2024 Chaldal. All rights reserved.</div>
+<div class="items-center box-border caret-transparent flex flex-wrap mt-4 md:mt-0"><a href="/terms" class="text-gray-400 text-sm box-border caret-transparent block leading-5 hover:text-orange-500">Terms of Service</a>
+<a href="/privacy" class="text-gray-400 text-sm box-border caret-transparent block leading-5 ml-6 hover:text-orange-500">Privacy Policy</a>
+<a href="/cookies" class="text-gray-400 text-sm box-border caret-transparent block leading-5 ml-6 hover:text-orange-500">Cookie Policy</a>
+<a href="/data-protection" class="text-gray-400 text-sm box-border caret-transparent block leading-5 ml-6 hover:text-orange-500">Data Protection</a>
+</div>
+</div>
+</div>
+<div class="box-border caret-transparent h-20 md:h-0"></div>
+</footer>
+<div class="fixed box-border caret-transparent block z-30 bottom-0 inset-x-0 md:hidden"><div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent border-gray-200 border-t border-solid"><div class="box-border caret-transparent grid grid-cols-[repeat(5,minmax(0px,1fr))]"><button data-nav-item="home" class="relative text-orange-500 text-sm font-medium items-center bg-orange-500/10 caret-transparent gap-x-2 flex flex-col h-16 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-center text-nowrap p-2 md:min-h-0 md:min-w-0 hover:text-slate-900 hover:bg-slate-100"><div class="relative box-border caret-transparent min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-43.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mb-1" />
+</div>
+<span class="text-xs box-border caret-transparent block leading-4 min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0">Home</span>
+</button>
+<button data-nav-item="categories" class="relative text-gray-600 text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex flex-col h-16 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-center text-nowrap p-2 md:min-h-0 md:min-w-0 hover:text-orange-500 hover:bg-gray-50"><div class="relative box-border caret-transparent min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-44.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mb-1" />
+</div>
+<span class="text-xs box-border caret-transparent block leading-4 min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0">Categories</span>
+</button>
+<button data-nav-item="search" class="relative text-gray-600 text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex flex-col h-16 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-center text-nowrap p-2 md:min-h-0 md:min-w-0 hover:text-orange-500 hover:bg-gray-50"><div class="relative box-border caret-transparent min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-45.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mb-1" />
+</div>
+<span class="text-xs box-border caret-transparent block leading-4 min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0">Search</span>
+</button>
+<button data-nav-item="cart" class="relative text-gray-600 text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex flex-col h-16 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-center text-nowrap p-2 md:min-h-0 md:min-w-0 hover:text-orange-500 hover:bg-gray-50"><div class="relative box-border caret-transparent min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-46.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mb-1" />
+<span data-cart-count class="absolute -top-1 -right-1 bg-orange-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center" style="display: none;">0</span>
+</div>
+<span class="text-xs box-border caret-transparent block leading-4 min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0">Cart</span>
+</button>
+<button data-nav-item="account" class="relative text-gray-600 text-sm font-medium items-center bg-transparent caret-transparent gap-x-2 flex flex-col h-16 justify-center leading-5 min-h-[auto] min-w-[auto] gap-y-2 text-center text-nowrap p-2 md:min-h-0 md:min-w-0 hover:text-orange-500 hover:bg-gray-50"><div class="relative box-border caret-transparent min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0"><img src="https://c.animaapp.com/mf8d6omgi0DPwz/assets/icon-47.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 text-nowrap w-4 mb-1" />
+</div>
+<span class="text-xs box-border caret-transparent block leading-4 min-h-[auto] min-w-[auto] text-nowrap md:min-h-0 md:min-w-0">Account</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Cart functionality
+let cart = [];
+let cartCount = 0;
+let isCartOpen = false;
+
+// Mobile menu toggle
+function toggleMobileMenu() {
+  const sidebar = document.querySelector('aside');
+  sidebar.classList.toggle('-translate-x-full');
+}
+
+// Sidebar collapse functionality
+function toggleSidebar() {
+  const sidebar = document.querySelector('aside');
+  const main = document.querySelector('main');
+  const collapseBtn = document.querySelector('[data-collapse]');
+  
+  if (sidebar.classList.contains('collapsed')) {
+    sidebar.classList.remove('collapsed');
+    sidebar.style.width = '320px';
+    main.style.marginLeft = '320px';
+    collapseBtn.textContent = 'Collapse';
+  } else {
+    sidebar.classList.add('collapsed');
+    sidebar.style.width = '80px';
+    main.style.marginLeft = '80px';
+    collapseBtn.textContent = 'Expand';
+  }
+}
+
+// Toggle cart dropdown
+function toggleCart() {
+  const cartDropdown = document.getElementById('cartDropdown');
+  isCartOpen = !isCartOpen;
+  
+  if (isCartOpen) {
+    cartDropdown.classList.remove('hidden');
+    cartDropdown.classList.add('block');
+  } else {
+    cartDropdown.classList.add('hidden');
+    cartDropdown.classList.remove('block');
+  }
+}
+
+// Close cart when clicking outside
+function closeCartOnOutsideClick(event) {
+  const cartDropdown = document.getElementById('cartDropdown');
+  const cartButton = document.querySelector('[data-cart-toggle]');
+  
+  if (isCartOpen && !cartDropdown.contains(event.target) && !cartButton.contains(event.target)) {
+    toggleCart();
+  }
+}
+
+// Add to cart functionality
+function addToCart(productName, price, image, productId) {
+  const existingItem = cart.find(item => item.id === productId);
+  
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    cart.push({
+      id: productId,
+      name: productName,
+      price: price,
+      image: image,
+      quantity: 1
+    });
+  }
+  
+  updateCartCount();
+  updateCartUI();
+  showCartNotification(productName + ' added to cart!');
+  updateProductQuantityDisplay(productId);
+}
+
+// Update quantity in cart
+function updateCartQuantity(productId, change) {
+  const item = cart.find(item => item.id === productId);
+  if (item) {
+    item.quantity += change;
+    if (item.quantity <= 0) {
+      removeFromCart(productId);
+    } else {
+      updateCartCount();
+      updateCartUI();
+      updateProductQuantityDisplay(productId);
+    }
+  }
+}
+
+// Remove item from cart
+function removeFromCart(productId) {
+  cart = cart.filter(item => item.id !== productId);
+  updateCartCount();
+  updateCartUI();
+  updateProductQuantityDisplay(productId);
+  showCartNotification('Item removed from cart');
+}
+
+// Update cart count
+function updateCartCount() {
+  cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+}
+
+// Update cart UI
+function updateCartUI() {
+  const cartBadges = document.querySelectorAll('[data-cart-count]');
+  cartBadges.forEach(badge => {
+    badge.textContent = cartCount;
+    badge.style.display = cartCount > 0 ? 'flex' : 'none';
+  });
+  
+  updateCartDropdown();
+}
+
+// Update cart dropdown content
+function updateCartDropdown() {
+  const cartItems = document.getElementById('cartItems');
+  const cartSubtotal = document.getElementById('cartSubtotal');
+  const cartTotal = document.getElementById('cartTotal');
+  const emptyCart = document.getElementById('emptyCart');
+  const cartContent = document.getElementById('cartContent');
+  
+  if (cart.length === 0) {
+    emptyCart.classList.remove('hidden');
+    cartContent.classList.add('hidden');
+    return;
+  }
+  
+  emptyCart.classList.add('hidden');
+  cartContent.classList.remove('hidden');
+  
+  // Update cart items
+  cartItems.innerHTML = cart.map(item => `
+    <div class="flex items-center justify-between p-3 border-b border-gray-100">
+      <div class="flex items-center space-x-3">
+        <img src="${item.image}" alt="${item.name}" class="w-12 h-12 object-cover rounded-lg">
+        <div>
+          <h4 class="font-medium text-gray-800">${item.name}</h4>
+          <p class="text-sm text-gray-600">৳${item.price}</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-2">
+        <button onclick="updateCartQuantity('${item.id}', -1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+          <span class="text-gray-600">−</span>
+        </button>
+        <span class="w-8 text-center font-medium">${item.quantity}</span>
+        <button onclick="updateCartQuantity('${item.id}', 1)" class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
+          <span class="text-gray-600">+</span>
+        </button>
+        <button onclick="removeFromCart('${item.id}')" class="w-8 h-8 flex items-center justify-center text-red-500 hover:bg-red-50 rounded-full ml-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  `).join('');
+  
+  // Calculate totals
+  const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+  const deliveryFee = subtotal >= 500 ? 0 : 50;
+  const total = subtotal + deliveryFee;
+  
+  cartSubtotal.textContent = `৳${subtotal}`;
+  cartTotal.textContent = `৳${total}`;
+  
+  // Update delivery fee display
+  const deliveryFeeElement = document.getElementById('deliveryFee');
+  if (deliveryFeeElement) {
+    deliveryFeeElement.textContent = deliveryFee === 0 ? 'FREE' : `৳${deliveryFee}`;
+    deliveryFeeElement.className = deliveryFee === 0 ? 'text-green-600 font-medium' : 'text-gray-600';
+  }
+}
+
+// Update product quantity display on product cards
+function updateProductQuantityDisplay(productId) {
+  const productCard = document.querySelector(`[data-product-id="${productId}"]`);
+  if (!productCard) return;
+  
+  const item = cart.find(item => item.id === productId);
+  const addButton = productCard.querySelector('[data-add-to-cart]');
+  const quantityControls = productCard.querySelector('[data-quantity-controls]');
+  const quantityDisplay = productCard.querySelector('[data-quantity-display]');
+  
+  if (item && item.quantity > 0) {
+    addButton.classList.add('hidden');
+    quantityControls.classList.remove('hidden');
+    quantityDisplay.textContent = item.quantity;
+  } else {
+    addButton.classList.remove('hidden');
+    quantityControls.classList.add('hidden');
+  }
+}
+
+// Product quantity controls on cards
+function updateProductQuantity(productId, change) {
+  const item = cart.find(item => item.id === productId);
+  if (item) {
+    updateCartQuantity(productId, change);
+  }
+}
+
+// Category filter functionality
+function filterProducts(category) {
+  const products = document.querySelectorAll('[data-product]');
+  const filterButtons = document.querySelectorAll('[data-filter]');
+  
+  // Update active filter button
+  filterButtons.forEach(btn => {
+    btn.classList.remove('bg-orange-500', 'text-white');
+    btn.classList.add('bg-zinc-50', 'border-slate-200');
+  });
+  
+  const activeButton = document.querySelector(`[data-filter="${category}"]`);
+  if (activeButton) {
+    activeButton.classList.add('bg-orange-500', 'text-white');
+    activeButton.classList.remove('bg-zinc-50', 'border-slate-200');
+  }
+  
+  // Filter products
+  products.forEach(product => {
+    const productCategory = product.dataset.category;
+    if (category === 'all' || productCategory === category) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
+
+// Sort products functionality
+function sortProducts(sortBy) {
+  const productsContainer = document.querySelector('[data-products-container]');
+  const products = Array.from(productsContainer.children);
+  
+  products.sort((a, b) => {
+    const priceA = parseInt(a.dataset.price);
+    const priceB = parseInt(b.dataset.price);
+    const ratingA = parseFloat(a.dataset.rating);
+    const ratingB = parseFloat(b.dataset.rating);
+    
+    switch (sortBy) {
+      case 'price-low':
+        return priceA - priceB;
+      case 'price-high':
+        return priceB - priceA;
+      case 'rating':
+        return ratingB - ratingA;
+      default:
+        return 0;
+    }
+  });
+  
+  products.forEach(product => {
+    productsContainer.appendChild(product);
+  });
+}
+
+// Search functionality
+function handleSearch(event) {
+  event.preventDefault();
+  const searchInput = event.target.querySelector('input');
+  const searchTerm = searchInput.value.toLowerCase();
+  
+  if (searchTerm.trim() === '') return;
+  
+  const products = document.querySelectorAll('[data-product]');
+  let visibleCount = 0;
+  
+  products.forEach(product => {
+    const productName = product.querySelector('h3').textContent.toLowerCase();
+    const productDescription = product.querySelector('p').textContent.toLowerCase();
+    
+    if (productName.includes(searchTerm) || productDescription.includes(searchTerm)) {
+      product.style.display = 'block';
+      visibleCount++;
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
+
+// Newsletter subscription
+function handleNewsletterSubmit(event) {
+  event.preventDefault();
+  const emailInput = event.target.querySelector('input[type="email"]');
+  const email = emailInput.value;
+  
+  if (email) {
+    showCartNotification('Thank you for subscribing to our newsletter!');
+    emailInput.value = '';
+  }
+}
+
+// Generic notification function
+function showCartNotification(message) {
+  const notification = document.createElement('div');
+  notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
+  notification.textContent = message;
+  
+  document.body.appendChild(notification);
+  
+  setTimeout(() => {
+    notification.classList.remove('translate-x-full');
+  }, 100);
+  
+  setTimeout(() => {
+    notification.classList.add('translate-x-full');
+    setTimeout(() => {
+      if (document.body.contains(notification)) {
+        document.body.removeChild(notification);
+      }
+    }, 300);
+  }, 3000);
+}
+
+// Wishlist functionality
+function toggleWishlist(button, productName) {
+  const isWishlisted = button.classList.contains('wishlisted');
+  
+  if (isWishlisted) {
+    button.classList.remove('wishlisted', 'text-red-500');
+    button.classList.add('text-gray-600');
+    showCartNotification(`${productName} removed from wishlist`);
+  } else {
+    button.classList.add('wishlisted', 'text-red-500');
+    button.classList.remove('text-gray-600');
+    showCartNotification(`${productName} added to wishlist`);
+  }
+}
+
+// Mobile navigation
+function setActiveNavItem(item) {
+  const navItems = document.querySelectorAll('[data-nav-item]');
+  navItems.forEach(nav => {
+    nav.classList.remove('text-orange-500', 'bg-orange-500/10');
+    nav.classList.add('text-gray-600', 'bg-transparent');
+  });
+  
+  const activeItem = document.querySelector(`[data-nav-item="${item}"]`);
+  if (activeItem) {
+    activeItem.classList.add('text-orange-500', 'bg-orange-500/10');
+    activeItem.classList.remove('text-gray-600', 'bg-transparent');
+  }
+}
+
+// Dropdown toggle functionality
+function toggleDropdown(dropdownId) {
+  const dropdown = document.getElementById(dropdownId);
+  const isHidden = dropdown.classList.contains('hidden');
+  
+  // Close all other dropdowns
+  document.querySelectorAll('[data-dropdown]').forEach(dd => {
+    if (dd.id !== dropdownId) {
+      dd.classList.add('hidden');
+    }
+  });
+  
+  if (isHidden) {
+    dropdown.classList.remove('hidden');
+  } else {
+    dropdown.classList.add('hidden');
+  }
+}
+
+// Close dropdowns when clicking outside
+function closeDropdownsOnOutsideClick(event) {
+  const dropdowns = document.querySelectorAll('[data-dropdown]');
+  dropdowns.forEach(dropdown => {
+    const button = document.querySelector(`[data-dropdown-toggle="${dropdown.id}"]`);
+    if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Add event listeners for mobile menu
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  if (menuToggle) {
+    menuToggle.addEventListener('click', toggleMobileMenu);
+  }
+  
+  // Add event listeners for sidebar collapse
+  const collapseBtn = document.querySelector('[data-collapse]');
+  if (collapseBtn) {
+    collapseBtn.addEventListener('click', toggleSidebar);
+  }
+  
+  // Add event listeners for cart toggle
+  const cartToggle = document.querySelector('[data-cart-toggle]');
+  if (cartToggle) {
+    cartToggle.addEventListener('click', toggleCart);
+  }
+  
+  // Add event listeners for search forms
+  const searchForms = document.querySelectorAll('form');
+  searchForms.forEach(form => {
+    const searchInput = form.querySelector('input[type="text"]');
+    if (searchInput && searchInput.placeholder.includes('Search')) {
+      form.addEventListener('submit', handleSearch);
+    }
+    
+    const emailInput = form.querySelector('input[type="email"]');
+    if (emailInput) {
+      form.addEventListener('submit', handleNewsletterSubmit);
+    }
+  });
+  
+  // Add event listeners for filter buttons
+  const filterButtons = document.querySelectorAll('[data-filter]');
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterProducts(button.dataset.filter);
+    });
+  });
+  
+  // Add event listeners for sort dropdown
+  const sortSelect = document.querySelector('select');
+  if (sortSelect) {
+    sortSelect.addEventListener('change', (e) => {
+      sortProducts(e.target.value);
+    });
+  }
+  
+  // Add event listeners for add to cart buttons
+  const addToCartButtons = document.querySelectorAll('[data-add-to-cart]');
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const productCard = button.closest('[data-product]');
+      const productId = productCard.dataset.productId;
+      const productName = productCard.querySelector('h3').textContent;
+      const price = parseInt(productCard.dataset.price);
+      const image = productCard.querySelector('img').src;
+      
+      addToCart(productName, price, image, productId);
+    });
+  });
+  
+  // Add event listeners for wishlist buttons
+  const wishlistButtons = document.querySelectorAll('[data-wishlist]');
+  wishlistButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const productCard = button.closest('[data-product]');
+      const productName = productCard.querySelector('h3').textContent;
+      toggleWishlist(button, productName);
+    });
+  });
+  
+  // Add event listeners for mobile navigation
+  const mobileNavItems = document.querySelectorAll('[data-nav-item]');
+  mobileNavItems.forEach(item => {
+    item.addEventListener('click', () => {
+      setActiveNavItem(item.dataset.navItem);
+    });
+  });
+  
+  // Add event listeners for dropdown toggles
+  const dropdownToggles = document.querySelectorAll('[data-dropdown-toggle]');
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleDropdown(toggle.dataset.dropdownToggle);
+    });
+  });
+  
+  // Close dropdowns and cart when clicking outside
+  document.addEventListener('click', (event) => {
+    closeDropdownsOnOutsideClick(event);
+    closeCartOnOutsideClick(event);
+  });
+  
+  // Initialize cart UI
+  updateCartUI();
+});
+
+</script>
+</body>
+
+</html>

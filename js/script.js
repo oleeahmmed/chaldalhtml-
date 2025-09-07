@@ -346,3 +346,4 @@ window.addEventListener("resize", () => {
 // Initialize
 updateCartCount()
 updateProductQuantityDisplays()
+
